@@ -40,6 +40,7 @@ control.net(
   verbose = TRUE,
   verbose.int = 1,
   skip.check = FALSE,
+  extract.summary.stats = FALSE,
   ...
 )
 }
@@ -194,6 +195,9 @@ structure and consistency of the parameter values, initial conditions,
 and control settings before running base epidemic models. Setting
 this to \code{FALSE} is recommended when running models with new modules
 specified.}
+
+\item{extract.summary.stats}{Calculate and save generative model summary statistics
+during \code{tergmLite} simulation.}
 
 \item{...}{Additional control settings passed to model.}
 }
