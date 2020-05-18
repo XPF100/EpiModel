@@ -359,6 +359,8 @@ control.icm <- function(type, nsteps, nsims = 1, rec.rand = TRUE, a.rand = TRUE,
 #'        and control settings before running base epidemic models. Setting
 #'        this to \code{FALSE} is recommended when running models with new modules
 #'        specified.
+#' @param extract.summary.stats Calculate and save generative model summary statistics
+#'        during \code{tergmLite} simulation.
 #' @param ... Additional control settings passed to model.
 #'
 #' @details
@@ -429,7 +431,7 @@ control.net <- function(type, nsteps, start = 1, nsims = 1, ncores = 1,
                         save.nwstats = TRUE, nwstats.formula = "formation",
                         delete.nodes = FALSE, save.transmat = TRUE,
                         save.network = TRUE, save.other, verbose = TRUE,
-                        verbose.int = 1, skip.check = FALSE, ...) {
+                        verbose.int = 1, skip.check = FALSE, extract.summary.stats = FALSE, ...) {
 
   # Get arguments
   p <- list()
